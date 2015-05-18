@@ -2,6 +2,22 @@ body {
     background-color: black;
 }
 
+a:link {
+    text-decoration: none;
+    color: darkgray;
+}
+
+a:visited {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.blurb {
+    width: 95%;
+    font-family: san-serif;
+    color: gainsboro;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -9,12 +25,14 @@ body {
 }
 
 .pageHeader {
-    text-align: center;
+    text-align: left;
     padding-bottom: 5px;
+    color: darkgray;
+    height: 32px;
 }
 
 .pageContent {
-
+    height: 90%;
 }
 
 .pageFooter {
@@ -25,4 +43,39 @@ body {
 .pageTitle {
     font-family: san-serif;
     color: gainsboro;
+}
+
+.header-links {
+    margin: 0px 0px 0px 0px;
+    float: left;
+    font-family: "courier new";
+    font-size: 26;
+}
+
+
+/* -------
+ Social Links
+-------- */
+.social-icons {
+    margin: 0px 0px 0px 90%;
+    text-align: right;
+}
+
+.social-icons a {
+    margin: 5px 3px 0 0;
+    width: 29px;
+    height: 29px;
+    display: block;
+    float: left;
+}
+
+
+.fb-icon {
+    background: url(../img/fb.png);
+}
+
+.twitter-icon {
+    background-image: url(../img/twitter.png);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
 }
