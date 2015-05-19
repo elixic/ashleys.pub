@@ -1,21 +1,24 @@
 body {
     background-color: black;
+    background-image: url("../img/dyesinlet.jpg");
+    background-repeat: no-repeat;
 }
 
 a:link {
     text-decoration: none;
-    color: darkgray;
+    color: dimgray;
 }
 
 a:visited {
     text-decoration: none;
-    color: darkgray;
+    color: dimgray;
 }
 
 .blurb {
     width: 95%;
     font-family: san-serif;
-    color: gainsboro;
+    font-size: 13pt;
+    color: dimgray;
 }
 
 .center {
