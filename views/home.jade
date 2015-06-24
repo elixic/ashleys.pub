@@ -1,0 +1,30 @@
+doctype html
+
+head
+    link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+    link(rel='icon', href='img/beer-glass.ico')
+    title Ashley's Pub : Boardom's End
+    script(type='application/javascript', language='JavaScript', src='js/lib/angular.min.js')
+    script(type='application/javascript', language='JavaScript', src='js/lib/angular-route.min.js')
+body(ng-app="pub")
+    div(class='center pageHeader')
+        div(class='header-links')
+            span
+                a(href='http://ashleys.pub') Home
+        div(class='social-icons')
+            a(class='fb-icon', href='https://www.facebook.com/ashleyspubkitsap', target='_blank')
+            a(class='twitter-icon', href='https://twitter.com/ashleyspub', targe='_blank')
+    div(class='center pageContent')
+        span(class='blurb')
+            | We are preparing to open a board game pub in Kitsap County. We will serve local beers, ciders and wine, along with great games. Play any of our large selection of games from 1 to many players, with guidance from our knowledgeable bartenders.
+            | At this time we do not serve food, but feel free to bring in your own. We will have menus for all the local delivery services for your convenience.
+            | We are a Safe Place and we welcome all!
+        div(class='ng-view')
+    div(class='center pageFooter')
+        span Copyright $copy; 2015 Ashley's Pub
+
+    script(type='text/javascript', src='js/app/app.js')
+    script(type='text/javascript', src='js/app/EmailForm/index.js')
+    script(type='text/javascript', src='js/app/EmailForm/EmailFormService.js')
+    script(type='text/javascript', src='js/app/EmailForm/EmailFormController.js')

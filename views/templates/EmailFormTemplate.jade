@@ -1,0 +1,8 @@
+div(name='emailRequest')
+    form(name='email', ng-submit='send()')
+        div(class='input-group')
+            input(type='email', name='email', class='form-control', placehoder='Email Address', ng-model='email.address', required)
+            span(class='input-group-btn')
+                button(class='btn btn-default', name='send')
+                    span(class='glyphicon glyphicon-send')
+                        span &nbsp;

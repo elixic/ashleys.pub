@@ -1,5 +1,6 @@
-<html ng-app>
+<html ng-app="pub">
 <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="icon" href="img/beer-glass.ico"/>
     <!-- Original icon by Zach Harris from the Noun Project -->
@@ -20,14 +21,25 @@
         <span class="blurb">
             We are preparing to open a board game pub in Kitsap County. We will serve local beers, ciders and wine, along with great games. Play any of our large selection of games from 1 to many players, with guidance from our knowledgeable bartenders.
 
-At this time we do not serve food, but feel free to bring in your own. We will have menus for all the local delivery services for your convenience.
+            At this time we do not serve food, but feel free to bring in your own. We will have menus for all the local delivery services for your convenience.
 
-We are a Safe Place and we welcome all!
+            We are a Safe Place and we welcome all!
         </span>
-        <iframe src="https://docs.google.com/forms/d/1G1icZE-m2vZVorue6X9fuVtjqmnZFhpUkIxVJimK7i0/viewform?embedded=true" width="760" height="85%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <div name="emailRequest" ng-controller="EmailFormController">
+            <form name="email">
+                <div class="input-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" ng-model="email.address" required />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="send-button" name="send" ng-click="send()"><span class="glyphicon glyphicon-send"></span><span>&nbsp;</span></button>
+                    </span>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="center pageFooter">
         <span>Copyright &copy; 2015 Ashley's Drinks and Games</span>
     </div>
+    <script type="text/javascript" src="js/app/app.js"></script>
+    <script type="text/javascript" src="js/app/directives/currentSurvey.js"></script>
 </body>
 </html>
