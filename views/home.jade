@@ -5,9 +5,10 @@ head
     link(rel='stylesheet', href='css/main.css', type='text/css')
     link(rel='icon', href='img/beer-glass.ico')
     title Ashley's Pub : Boardom's End
+    script(type='application/javascript', languare='JavaScript', data-main='js/main.js', arc='js/lib/require-2.1.18.js')
     script(type='application/javascript', language='JavaScript', src='js/lib/angular.min.js')
     script(type='application/javascript', language='JavaScript', src='js/lib/angular-route.min.js')
-body(ng-app="pub")
+body()
     div(class='center pageHeader')
         div(class='header-links')
             span
@@ -24,7 +25,3 @@ body(ng-app="pub")
     div(class='center pageFooter')
         span Copyright $copy; 2015 Ashley's Pub
 
-    script(type='text/javascript', src='js/app/app.js')
-    script(type='text/javascript', src='js/app/EmailForm/index.js')
-    script(type='text/javascript', src='js/app/EmailForm/EmailFormService.js')
-    script(type='text/javascript', src='js/app/EmailForm/EmailFormController.js')
