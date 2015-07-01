@@ -1,11 +1,11 @@
 define([
     'angular',
     'angular-route',
-    'js/app/Emailform/index'
+    './Emailform/index'
 ],
     function (ng) {
         'use strict';
-        var app = ng.module('pub', ['ngRoute']);
+        var app = ng.module('pub', ['ngRoute', 'pub.EmailForm']);
 
         app.config(['$routeProvider', function ($routeProvider) {
                 $routeProvider.when('/', {

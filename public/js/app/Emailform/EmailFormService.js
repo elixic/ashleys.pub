@@ -1,8 +1,8 @@
-require([
-    'js/app/Emailform/index'
+define([
+    './module'
 ],
 function(emailFormModule) {
-    'use script';
+    'use strict';
 
     emailFormModule
         .factory('emailFormService', ['$http', function ($http) {

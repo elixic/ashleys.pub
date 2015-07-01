@@ -1,5 +1,5 @@
 define([
     'angular'
 ], function(ng) {
-    return ng.module('pub.EmailForm',[])
+    return ng.module('pub.EmailForm',[]);
 });

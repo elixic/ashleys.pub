@@ -1,5 +1,5 @@
-require([
-    'js/app/Emailform/index'
+define([
+    './module'
 ],
 function(emailFormModule) {
     'use strict';

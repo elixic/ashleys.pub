@@ -1,12 +1,12 @@
 define([
     'require',
     'angular',
-    'app'
+    './app'
 ],
 function(require, ng) {
     'use strict';
 
-    requre([], function() {
+    require([], function() {
         ng.bootstrap(document, ['pub']);
     });
 });

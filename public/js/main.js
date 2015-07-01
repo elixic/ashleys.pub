@@ -1,7 +1,7 @@
 require.config({
     paths: {
-        "angular": "js/lib/angular.min",
-        "angular-route": "js/lib/angular-router.min"
+        "angular": "./lib/angular.min",
+        "angular-route": "./lib/angular-route.min"
     },
     shim: {
         "angular": {
@@ -11,6 +11,6 @@ require.config({
             exports: "angular-route"
         }
     },
-    deps: ["js/app/bootstrap"]
+    deps: ["./app/bootstrap"]
 
 });

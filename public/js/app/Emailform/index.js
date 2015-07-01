@@ -1,7 +1,6 @@
-require([
+define([
+    './EmailFormController',
+    './EmailFormService'
 ],
-function(emailFormController, emailFormService) {
-    'use strict';
+function() {});
 
-    angular.module('pub.EmailForm', []);
-});
