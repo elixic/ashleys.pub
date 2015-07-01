@@ -1,3 +1,6 @@
-'use strict';
+define([
+    './EmailFormController',
+    './EmailFormService'
+],
+function() {});
 
-angular.module('pub.EmailForm', []);

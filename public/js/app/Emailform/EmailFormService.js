@@ -1,13 +1,18 @@
-'use script';
+define([
+    './module'
+],
+function(emailFormModule) {
+    'use strict';
 
-angular.module('pub.EmailForm')
-    .factory('emailFormService', ['$http', function ($http) {
-        return {
-            store: function (email) {
-                var payload = {
-                    "email": email
-                };
-                return $http.post('saveEmail', payload);
+    emailFormModule
+        .factory('emailFormService', ['$http', function ($http) {
+            return {
+                store: function (email) {
+                    var payload = {
+                        "email": email
+                    };
+                    return $http.post('saveEmail', payload);
+                }
             }
-        }
-    }]);
+        }]);
+});
