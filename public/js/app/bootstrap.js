@@ -1,6 +1,7 @@
 define([
     'require',
     'angular',
+    'bootstrap',
     './app'
 ],
 function(require, ng) {

@@ -3,7 +3,6 @@
 var express = require('express'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
-    MongoClient = require('mongodb').MongoClient,
     log = require('debug')('pub:main:info'),
     debug = require('debug')('pub:main:debug'),
     emailCollector = require('./emailCollector'),
@@ -17,16 +16,6 @@ app.use(express.static('public'));
 
 app.set('views', './views');
 app.set('view engine', 'jade');
-
-
-MongoClient.connect("mongodb://localhost:27017/test", function (err, db) {
-    if (err) {
-        log(err);
-    } else {
-        
-        db.close();
-    }
-});
 
 server = app.listen('8080', function() {
    var host = server.address().host,
