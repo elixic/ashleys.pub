@@ -9,9 +9,9 @@ function(emailFormModule) {
             return {
                 store: function (email) {
                     var payload = {
-                        "email": email
+                      "email": email
                     };
-                    return $http.post('saveEmail', payload);
+                    return $http.post("saveEmail", payload);
                 }
             }
         }]);

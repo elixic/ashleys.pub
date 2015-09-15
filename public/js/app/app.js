@@ -3,13 +3,13 @@ define([
     'angular-route',
     './Emailform/index'
 ],
-    function (ng) {
+    function (ng, ngRoute) {
         'use strict';
         var app = ng.module('pub', ['ngRoute', 'pub.EmailForm']);
 
         app.config(['$routeProvider', function ($routeProvider) {
                 $routeProvider.when('/', {
-                    templateUrl: 'template/EmailFormTemplate',
+                    templateUrl: 'template/MailChimpTemplate',
                     controller: 'EmailFormController'
                 });
 
